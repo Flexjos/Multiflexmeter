@@ -5,13 +5,13 @@
 #include <hal/hal.h>
 #include <SPI.h>
 
-// Network Session Key (msb)
+// Network Session Key (msb, hex-style) use your own TTN key
 static const PROGMEM u1_t NWKSKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // here Network Session Key in hex-style
  
-//App Session Key (msb)
+//App Session Key (msb, hex-style) use your own TTN key
 static const u1_t PROGMEM APPSKEY[16] = { 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00 }; // here App Session Key in hex-style
  
-//Device Address
+//Device Address (C-style) use your own TTN key
 static const u4_t DEVADDR = 0x00000000 ; // <-- Change this address for every node! Prefix: 0x
  
 // These callbacks are only used in over-the-air activation, so they are
